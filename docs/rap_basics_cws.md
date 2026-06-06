@@ -211,6 +211,7 @@ Um eine Consumption View anzulegen klicke mit der rechten Maustaste auf die Tabe
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/consumption_view_employee_data.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -247,6 +248,7 @@ Die Metadata Extension wird genau so benannt wie die Consumption View. Lege die 
   <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/metadata_extension_employee_2.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -304,6 +306,7 @@ Denn auch hier können wir bestimmen welchen Typ wir generieren lassen wollen. W
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/service_definition.png" 
        alt="Markdown Logo" min-width:180px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen kann hier auf Finish geklickt werden, da es bisher nur einen Template für die Service Definition gibt. Es kann aber natürlich auch wieder mit Next durchgeklickt werden.
@@ -330,6 +333,7 @@ Rechtsklick auf Service Definition → New Service Binding
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/service_binding_2.png" 
        alt="Markdown Logo" min-width:180px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen kann hier auf Finish geklickt werden.
@@ -411,6 +415,7 @@ Lege eine neue Interface-View an durch einen Rechtsklick auf Data Definition und
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/interface_emp_skills.png" 
        alt="Markdown Logo" min-width:180px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -513,6 +518,7 @@ Wie zuvor auch erstellen wir die Consumption View mit einem Rechtsklick auf unse
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/consumption_view_emp_skills_anelegen_2.png" 
        alt="Markdown Logo" min-width:180px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 
@@ -562,6 +568,7 @@ Die Metadata Extension trägt wieder genau den gleichen namen wie die Consumptio
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/metadata_ext_emp_skills_anlegen.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -663,6 +670,7 @@ Erstelle mit einem Rechtsklick auf Data Definitions und dann New Data Definition
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/popup_proj_interface.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -742,6 +750,7 @@ Wie zuvor auch erstellen wir die Consumption View mit einem Rechtsklick auf unse
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/consumption_view_emp_proj_anelegen2.png" 
        alt="Markdown Logo" min-width:180px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 
@@ -792,6 +801,7 @@ Die Metadata Extension trägt wieder genau den gleichen namen wie die Consumptio
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/metadata_ext_emp_proj_anlegen.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage im Popup alle Daten gemäß dem Screenshot ein. Achte hierbei wieder darauf "XX" mit deiner Nummer zu ersetzen! Nach Eingabe der Informationen bitte nur auf "Next" und NICHT auf "Finish" klicken!
@@ -1026,6 +1036,7 @@ Im Popup muss nichts geändert werden. Alle Daten müssten schon vorausgefüllt 
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/popup_verhaltensdefinition_employee.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Nach dem generieren der Datei ist einges gelb und rot Markiert. Das soll uns erstmal nicht stören.
@@ -1171,6 +1182,7 @@ Hier muss im Popup ebenfalls nichts geändert werden. Es sollten hier auch wiede
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/verhaltensdefinition_employee_7.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+
 </figure>
 
 Hier passen wir auch wieder den Alias von Employee, Skills und Projekte an.
@@ -1261,9 +1273,10 @@ Darauf hin erscheint ein altbekanntes Popup zum Anlegen neuer Elemente.
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/verhaltensdefinition_employee_14.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
-Am Besten ist es, wenn man die Drafttabelle genau so nennt, wie auch die dazugehörige Tabellen plus "_D" am Ende. In diesem Beispiel wäre es aber leider durch Begrenzung der maximalen Zeichen für Tabellennamen (16 Zeichen) nicht möglich. Deshalb kürzen wir EMPLOYEE mit EMP ab.
+Am Besten ist es, wenn man die Drafttabelle genau so benennt, wie auch die dazugehörige Tabellen plus "_D" am Ende. In diesem Beispiel wäre es aber leider durch Begrenzung der maximalen Zeichen für Tabellennamen (16 Zeichen) nicht möglich. Deshalb kürzen wir EMPLOYEE mit EMP ab.
 
 Falls es nicht möglich ist, die Drafttabelle anlegen zu lassen, kann auch einfach die Datenbanktabelle dupliziert und umbenannt werden.
 
@@ -1375,7 +1388,7 @@ Die Zahl bei dem Skill-Level tauschen wir jetzt durch ein Sternerating aus. Dazu
 Die in der Datenbanktabelle gespeicherten Daten sind für die User nicht immer verständlich. An manchen Stellen ist es daher wünschenwert statt dem Wert einen Text anzuzeigen, den dieser repräsentiert. Dazu müssen wir unsere CDS-Views mit Assoziationen anreichern, die diese Informationen beinhalten.
 
 ### 7.3.1 Domain Values (Information)
-Inzwischen ist es nicht mehr erlaubt mit der CDS-View direkt auf die dd07T zuzugreifen. Stattdessen soll die CDS-View "DDCDS_CUSTOMER_DOMAIN_VALUE_T" verwendet werden. Dort wird allerdings ein Joing auf "ARS_OBJECTS_ALL_SW_COMP_SCP" gemacht. Diese Filtert zusätzlich die Komponenten. Dies kann schnell zu Problemen führen, da selbst wenn unsere Domain vorhanden ist und Werte in der dd07t gepflegt sind, kann es sein, dass die Domain in deinem Paket mit der falschen Komponente liegt (z.B. in eiben $TMP Paket). Wenn dies der Fall ist, öffne die se80, navigiere zu deinem Paket und ändere die Softwarekomponente zu einer in der ARS_OBJECTS_ALL_SW_COMP_SCP vorhanden Komponente ab. Beispielsweise zu "ZCUSTOM_DEVELOPMENT".
+Inzwischen ist es nicht mehr erlaubt mit der CDS-View direkt auf die dd07T zuzugreifen. Stattdessen soll die CDS-View "DDCDS_CUSTOMER_DOMAIN_VALUE_T" verwendet werden. Dort wird allerdings ein Joing auf "ARS_OBJECTS_ALL_SW_COMP_SCP" gemacht. Diese Filtert zusätzlich die Komponenten. Dies kann schnell zu Problemen führen, da selbst wenn unsere Domain vorhanden ist und Werte in der dd07t gepflegt sind, kann es sein, dass die Domain in deinem Paket mit der falschen Komponente liegt (z.B. in einen $TMP Paket). Wenn dies der Fall ist, öffne die se80, navigiere zu deinem Paket und ändere die Softwarekomponente zu einer in der ARS_OBJECTS_ALL_SW_COMP_SCP vorhanden Komponente ab. Beispielsweise zu "ZCUSTOM_DEVELOPMENT".
 
 
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
@@ -1396,6 +1409,7 @@ Denn auch hier können wir bestimmen welches Template wir generieren lassen woll
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/exp_text_2.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Ergänze die Interview-View um folgende Zeilen:
@@ -1511,6 +1525,7 @@ Denn auch hier können wir bestimmen welches Template wir generieren lassen woll
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/skill_ext_1.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Dort tragen wir folgendes ein:
@@ -1563,6 +1578,7 @@ Denn auch hier können wir bestimmen welches Template wir generieren lassen woll
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/proj_text_1.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 Tragen ensprechend diese Infos ein (hier machen wir es ohne zusätzliche Texttabelle):
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
@@ -1625,6 +1641,7 @@ Um die Klasse manuell anzulegen, klicke mit einem Rechtsklick auf "Source Code L
 <figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
   <img src="pictures/virtuelles_element_2.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
+       <figcaption style="text-align:center;"><span style="color: red">XX durch die Nummer ersetzen</span></figcaption>
 </figure>
 
 Trage die Werte entsprechend dem Screenshot ein. Hier könnte auch schon das Interface beim Anlegen hinzugefügt werden. Wir machen es aber erst gleich im Code. Wie immer daran denken das XX auszutauschen.
