@@ -1910,12 +1910,4 @@ Abschließend ein Klick auf Finish und unser Projekt wird generiert. Sobald das 
 
 **HINWEIS** GGF. muss noch npm install im Terminal ausgeführt werden.
 
-## 10 SAPUI5
-
-## 10.1 Intro & Wichtige Links
-## 10.2 Spalte SkillLevel erstellen
-## 10.3 i18n
-## 10.4 Section anlegen
-## 10.5 GGF. Custom Code
-
 
