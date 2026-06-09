@@ -1758,10 +1758,12 @@ Die 12 wird in unserem Fall aus den beiden Projekten hier berechnet:
 ### 7.5 Wertehilfen
 Wertehilfen sind für uns nix neues mehr. Deshalb fällt hier die Beschreibung etwas kürzer aus. Die Wertehilfen sind bereits im Paket Z_RAP_WS erstellt und müssen nur noch eingebunden. Je nach Zeit und Interesse können wir hier alle manuell anlegen.
 
+>**HINWEIS** Wenn genug Zeit ist legen wir die Wertehilfen selbst an.
+
 ### 7.5.1 Company
 In ZI_RAP_XX_EMPLOYEE
->association [0..1] to ZI_RAP_WS_COMPANY_VH as _CompanyText on $projection.Company = _CompanyText.Company
->@ObjectModel.foreignKey.association: '_CompanyText'
+>association [0..1] to ZI_RAP_WS_COMPANY_VH as _CompanyText on $projection.Company = _CompanyText.Company<br><br>
+>@ObjectModel.foreignKey.association: '_CompanyText'<br><br>
 >_CompanyText,
 
 In ZC_RAP_XX_EMPLOYEE
@@ -1775,8 +1777,8 @@ In Service Definition ZUI_RAP_XX_EMPLOYEE
 >expose ZI_RAP_WS_COMPANY_VH          as Company;
 ### 7.5.2 CC (Team)
 In ZI_RAP_XX_EMPLOYEE
->association [0..1] to ZI_RAP_WS_CC_VH as _Cc on $projection.CC = _CC.CcName
->@ObjectModel.foreignKey.association: '_Cc'
+>association [0..1] to ZI_RAP_WS_CC_VH as _Cc on $projection.CC = _CC.CcName<br><br>
+>@ObjectModel.foreignKey.association: '_Cc'<br><br>
 >_Cc
 
 In ZC_RAP_XX_EMPLOYEE
@@ -1790,12 +1792,12 @@ In Service Definition ZUI_RAP_XX_EMPLOYEE
 >expose ZI_RAP_WS_COMPANY_VH          as CcName;
 ### 7.5.3 Function
 In ZI_RAP_XX_EMPLOYEE
->association [0..1] to ZI_RAP_WS
+>association [0..1] to ZI_RAP_WS_FUNCTION_VH as _Function on $projection.Function = _Function.Function <br><br>
 >@ObjectModel.foreignKey.association: '_Function'
->_Function
+><br><br>_Function
 
 In ZC_RAP_XX_EMPLOYEE
->@ObjectModel.foreignKey.association: '_Function'
+>@ObjectModel.foreignKey.association: '_Function'<br><br>
 >_Function
 
 In ZC_RAP_XX_EMPLOYEE (Metadata Extension)
@@ -1803,6 +1805,21 @@ In ZC_RAP_XX_EMPLOYEE (Metadata Extension)
 
 In Service Definition ZUI_RAP_XX_EMPLOYEE
 >expose ZI_RAP_WS_FUNCTION_VH         as FunctionName;
+
+### 7.5.4 User
+ACHTUNG! Bitte hier normalerweise über die UserId joinen. Es konnte hier nur nicht mehr ohne weiteres Rückgäng gemacht werden.
+
+In ZI_RAP_XX_EMPLOYEE
+>association [0..1] to ZI_RAP_WS_USER_VH as _User on $projection.Surname = _User.FamilyName<br><br>
+
+In ZC_RAP_XX_EMPLOYEE
+>@ObjectModel.foreignKey.association: '_User'<br><br>
+
+In ZC_RAP_XX_EMPLOYEE (Metadata Extension)
+>   @Consumption.valueHelpDefinition: [ { entity: {name: 'ZI_RAP_WS_USER_VH', element: 'UserId' } } ]
+
+In Service Definition ZUI_RAP_XX_EMPLOYEE
+>expose ZI_RAP_WS_USER_VH             as UserId;
 
 ## Teil 8. Übersetzungen
 Innerhalb der CDS Views definierte Label können über die SE63 per Transportobjekte übersetzt werden.
@@ -1865,6 +1882,31 @@ Dann wählen wir für unseren Zweck einen List Report aus und klicken auf "Next"
        alt="Markdown Logo" min-width:150px; width: 40%>
 </figure>
 
+Im Anschluss wählen wir "Connect to a System" aus und unser entsprechendes System, sowie unseren Service.
+
+<figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
+  <img src="pictures/bas_4.png" 
+       alt="Markdown Logo" min-width:150px; width: 40%>
+</figure>
+
+Danach wählen wir unsere Employee Entität also Main Entitiy:
+<figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
+  <img src="pictures/bas_5.png" 
+       alt="Markdown Logo" min-width:150px; width: 40%>
+</figure>
+
+Wir könnnen jetzt hier einen Modul Name und einen App Title vergeben. Die restlichen Angaben sind Geschmackssache.
+<figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
+  <img src="pictures/bas_6.png" 
+       alt="Markdown Logo" min-width:150px; width: 40%>
+</figure>
+
+Abschließend ein Klick auf Finish und unser Projekt wird generiert. Sobald das Projekt generiert wurden, können wir uns mit einem Rechtsklick auf webapp und dann Preview Application unsere App ansehen.
+
+<figure style="border:1px solid #aaa; padding:10px; display:inline-block;">
+  <img src="pictures/bas_7.png" 
+       alt="Markdown Logo" min-width:150px; width: 40%>
+</figure>
 
 ## 10 SAPUI5
 
