@@ -4,19 +4,19 @@
 
 - Was ist RAP?
 
->Das RESTful ABAP Programming Model (RAP) ist das aktuelle Programmiermodell von SAP für die Entwicklung von Fiori-Applikationen und OData-Services auf Basis von ABAP. Es wurde mit SAP S/4HANA und der SAP Business Technology Platform (BTP) eingeführt und löst ältere Ansätze wie das BOPF-Framework (Business Object Processing Framework) ab.
+Das RESTful ABAP Programming Model (RAP) ist das aktuelle Programmiermodell von SAP für die Entwicklung von Fiori-Applikationen und OData-Services auf Basis von ABAP. Es wurde mit SAP S/4HANA und der SAP Business Technology Platform (BTP) eingeführt und löst ältere Ansätze wie das BOPF-Framework (Business Object Processing Framework) ab.
 RAP kombiniert CDS Views (Core Data Services) für die Datenschicht mit ABAP-Klassen für die Geschäftslogik – alles nach einem klar definierten, durchgängigen Schichtenmodell.
 
 - Warum RAP?
-```
+
 Früher wurden SAP-Anwendungen oft mit einem Mix aus klassischen ABAP-Reports, BAPIs, Function Modules und SAP Gateway-Projekten gebaut. Das führte zu:
 
 - uneinheitlichen Architekturen
 - schwer wartbarem Code
 - aufwändiger OData-Entwicklung
 
->RAP löst das durch ein standardisiertes, deklaratives Entwicklungsmodell, das direkt auf OData V4 und Fiori Elements ausgelegt ist.
-```
+RAP löst das durch ein standardisiertes, deklaratives Entwicklungsmodell, das direkt auf OData V4 und Fiori Elements ausgelegt ist.
+
 
 ### Kapitel 1.1: Aufbau CDS Views
 
