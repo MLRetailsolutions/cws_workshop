@@ -110,7 +110,7 @@ Die häufigsten Präfix sind wie folgt definiert:
 
 ---
 ## Vor dem Start
-- Jeder hat eine zweistellige Nummer erhalten, um seine Pakete zu benennen
+- Jeder hat einen User erhalten. Bitte benennt alle Objekte mit eurer Usernummer. Das heißt alle "XX" in den Namen werden durch eure Usernummer ausgetauscht. Beispielsweise wäre es dann "01" für den User 1
 - **<span style="color: #053ee8ff">Transport</span>** für das Paket anlegen, Beschreibung **<span style="color: #053ee8ff">Z_RAP_XX</span>**
 - **<span style="color: #053ee8ff">Paket</span>** anlegen mit dem Namen **<span style="color: #053ee8ff">Z_RAP_XX</span>**
 - Default ABAP Language Version **<span style="color: #053ee8ff">ABAP for Cloud Development</span>**
@@ -1907,6 +1907,8 @@ Abschließend ein Klick auf Finish und unser Projekt wird generiert. Sobald das 
   <img src="pictures/bas_7.png" 
        alt="Markdown Logo" min-width:150px; width: 40%>
 </figure>
+
+**HINWEIS** GGF. muss noch npm install im Terminal ausgeführt werden.
 
 ## 10 SAPUI5
 
