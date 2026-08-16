@@ -1911,3 +1911,146 @@ Abschließend ein Klick auf Finish und unser Projekt wird generiert. Sobald das 
 **HINWEIS** GGF. muss noch npm install im Terminal ausgeführt werden.
 
 
+## 10 🚀 SAPUI5 Session
+
+---
+
+### 10.1. Intro & Wichtige Links
+ 
+- Voraussetzungen: Business Application Studio (BAS) oder lokal mit UI5 Tooling  
+- [SAPUI5 Dokumentation](https://sapui5.hana.ondemand.com/)
+- [Flexible Programming Model](https://sapui5.hana.ondemand.com/sdk/test-resources/sap/fe/core/fpmExplorer/index.html#/overview/introduction)
+- Aufbau einer SAPUI5 App
+
+```plaintext
+zrap25/
+📂 webapp/                  # Hauptverzeichnis der App
+├── 📂 ext/                 # Erweiterungen
+│   └── main
+│       ├── 📂 controller/  # Controller (.controller.js)
+│       ├── 📂 view/        # Views (.view.xml)
+│       └── 📂 fragment/    # Fragmente (wiederverwendbare UI-Elemente)
+│
+├── 📂 i18n/                # Übersetzungen (i18n.properties)
+├── 📄 Component.js         # Einstiegspunkt der App
+├── 📄 manifest.json        # App-Konfiguration (Routen, Datenquellen, UI5-Settings)
+└── 📄 index.html           # Startseite
+
+📄 package.json             # Metadaten/Abhängigkeiten (bei UI5 Tooling)
+📄 ui5.yaml                 # Konfiguration für UI5 Tooling
+```
+
+### 10.2. Spalte SkillLevel erstellen
+
+🎬 **Szenario:** Wir benötigen eine neue Spalte in der Tabelle Skills, die anzeigt, welches Skill Level jemand hat. Aktuell wird das Level mit Hilfe von Sternen angezeigt. Dem Kunde ist das nicht fetzig genug. Er hätte gerne, dass andere Icons dargestellt werden.
+
+#### 10.2.1 Manifest
+```json
+"controlConfiguration": {
+                "_EmplSkills/@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "CustomColumnSkillLevel": {
+                      "header": "Hartkodierter String",
+                      "width": "15em",
+                      "importance": "High",
+                      "horizontalAlign": "Left",
+                      "template": "de.retailsolutions.zrap99employee.ext.main.fragment.CustomColumnSkillLevel",
+                      "availability": "Default"
+                    }
+                  }
+                }
+              },
+```
+#### 10.2.2 Template anlegen
+
+**Fragment**
+```xml
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:commons="sap.suite.ui.commons" xmlns="sap.m">
+
+</core:FragmentDefinition>
+```
+
+**Rating Indicator**
+```xml
+<RatingIndicator id="riSkillLevel" maxValue="4" class="sapUiSmallMarginBottom" value="{SkillLevel}" iconSize="24px" tooltip="Rating Tooltip" />
+```
+
+- [Icon Explorer](https://ui5.sap.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html)
+
+**Rating Indicator Icons**
+```xml
+<RatingIndicator id="riSkillLevel" maxValue="4" class="sapUiSmallMarginBottom" value="{SkillLevel}" iconSize="24px" iconSelected="sap-icon://technical-object" iconHovered="sap-icon://technical-object" iconUnselected="sap-icon://technical-object" tooltip="Rating Tooltip" editable="{ui>/isEditable}" />
+```
+
+
+#### 10.2.3 Wie platziere ich die Spalte & finde ich den richtigen Key-Anchor
+```json
+"position": {
+                        "placement": "After",
+                        "anchor": "ToDo"
+                      },
+```
+
+- [Finden des richtigen Key Anchors](https://sapui5.hana.ondemand.com/sdk/#/topic/6ffb084e6d8247d1863005c14e8d5894)
+```json
+"anchor": "DataFieldForAnnotation::DataPoint::SkillLevel"
+```
+
+#### 10.2.4 i18n Texte
+- Wir wollen keine hartkodierten Strings -> i18n
+```json
+customColumnSkillLevel=Skill Level
+```
+
+- Länderkürzelbeispiele: de, en (i18n_de)
+
+#### 10.2.5 Anzeige der Tabelle verändern:
+- GridTable vs ResponsiveTable
+```json
+"tableSettings": {
+                    "type": "GridTable"
+                  },
+```
+
+### 10.3. Neue Section anlegen
+
+🎬 **Szenario:** Wir benötigen eine weitere Section, die die Projekte des Mitarbeiters auf einer Karte anzeigt.
+
+#### 10.3.1 Section - Manifest
+```json
+"content": {
+                "body": {
+                  "sections": {
+                    "projectMap": {
+                      "name": "de.retailsolutions.employee.fragment.SectionMap",
+                      "type": "XMLFragment",
+                      "title": "{i18n>Map}",
+                      "template": "de.retailsolutions.employee.fragment.SectionMap"
+                    }
+                  }
+                }
+              }
+```
+
+#### 10.3.2 Fragment
+```xml
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:vbm="sap.ui.vbm" height="100%" displayBlock="true">
+	<vbm:AnalyticMap id="vbi" width="100%" height="600px">
+		<vbm:vos>
+					<vbm:Spots items="{_EmpProjects}">
+						<vbm:Spot position="{Coordinates}" tooltip="{ProjectName}"
+							labelPos="5" labelType="Default" />
+					</vbm:Spots>
+					<vbm:Spots>
+						<vbm:Spot id="wdfSpot" position="7.155;49.278888888889;0"
+							tooltip="St. Ingbert" labelType="Default"
+							labelPos="5">
+						</vbm:Spot>
+					</vbm:Spots>
+				</vbm:vos>
+	</vbm:AnalyticMap>
+</core:FragmentDefinition>
+```
